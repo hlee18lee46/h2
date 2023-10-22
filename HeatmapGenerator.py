@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import math
 
 def get_chart_1():
     import plotly.express as px
@@ -49,8 +50,14 @@ def get_chart_3(df):
         StateProvince.append(dataArr[i][1])
         ManufacturingRegion.append(dataArr[i][2])
         CountryName.append(dataArr[i][3])
-        Capacity.append(dataArr[i][4])
-        Usage.append(dataArr[i][5])
+        if((dataArr[i][4]) is None or math.isnan(dataArr[i][4])):
+            Capacity.append(0)
+        else:
+            Capacity.append(dataArr[i][4])
+        if(dataArr[i][5] is None or math.isnan(dataArr[i][5])):
+            Usage.append(0)
+        else:
+            Usage.append(dataArr[i][5])
         PreferredLogistics.append(dataArr[i][6])
 
     data=[PlantName, Capacity]
