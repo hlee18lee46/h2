@@ -60,8 +60,8 @@ def get_chart_3(df):
             Usage.append(dataArr[i][5])
         PreferredLogistics.append(dataArr[i][6])
 
-    data=[PlantName, Capacity]
-    fig = px.imshow(data,
+    #data=[PlantName, Capacity]
+    fig = px.imshow(
                     labels=dict(x=columns[0], y=columns[4], color="Capacity per Plant"),
                     x=PlantName,
                     y=Capacity
