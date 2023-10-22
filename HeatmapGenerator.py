@@ -28,9 +28,9 @@ def get_chart_2():
 
 
 
-def get_chart_3(myfile):
+def get_chart_3(df):
     import plotly.express as px
-    columns = myfile.columns.ravel()
+    columns = df.columns.ravel()
     
     #getting the columns off of the data.
     dataArr = pd.DataFrame(df).to_numpy()
