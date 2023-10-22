@@ -24,14 +24,14 @@ data['Capacity'].replace('NULL', 0, inplace=True)
 data['Usage'].replace('NULL', 0, inplace=True)
 
 # Prompt the user for country input
-country_input = input("Please enter a country name (or press enter to skip): ")
+country_input = 'road'
 
 # Filter the data based on the user's input
 if country_input and country_input in data['CountryName'].unique():
     data = data[data['CountryName'] == country_input]
 
 # Prompt the user for preferred logistics input
-logistics_input = input("Please enter a preferred logistics (or press enter to skip): ")
+logistics_input = 'Mexico'
 # Filter the data based on the user's logistics input
 if logistics_input:
     if logistics_input == "road":
