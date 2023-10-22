@@ -9,6 +9,9 @@ print(df)
 print(df.columns)
 column1 = pd.DataFrame(df, columns=["PlantName"])
 print(column1)
+data1 = pd.DataFrame(df).to_numpy()
+print(data1)
+
 
 hm.get_chart_1()
 hm.get_chart_2()
