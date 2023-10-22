@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 def get_chart_1():
     import plotly.express as px
