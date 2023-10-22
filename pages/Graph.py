@@ -9,6 +9,6 @@ print(df)
 
 hm.get_chart_1()
 hm.get_chart_2()
-
+hm.get_chart_3(df)
 #hmp.get_pdchart1()
 #hmp.get_pdchart2()

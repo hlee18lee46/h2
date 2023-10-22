@@ -29,9 +29,10 @@ def get_chart_2():
 
 def get_chart_3(myfile):
     import plotly.express as px
+    columns = myfile.columns.ravel()
     data=[[1, 25, 30, 50, 1], [20, 1, 60, 80, 30], [30, 60, 1, 5, 20]]
     fig = px.imshow(data,
-                    labels=dict(x="Day of Week", y="Time of Day", color="Productivity"),
+                    labels=dict(x=columns[0], y=columns[4], color="Productivity"),
                     x=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                     y=['Morning', 'Afternoon', 'Evening']
                    )
