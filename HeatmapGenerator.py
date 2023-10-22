@@ -53,7 +53,7 @@ def get_chart_3(df):
         Usage.append(dataArr[i][5])
         PreferredLogistics.append(dataArr[i][6])
 
-    data=[[1, 25, 30, 50, 1], [20, 1, 60, 80, 30], [30, 60, 1, 5, 20]]
+    data=[PlantName, Capacity]
     fig = px.imshow(data,
                     labels=dict(x=columns[0], y=columns[4], color="Capacity per Plant"),
                     x=PlantName,
