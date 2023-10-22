@@ -63,7 +63,7 @@ def get_chart_3(df):
     data=[PlantName, Capacity]
     fig = px.imshow(
                     #labels=dict(x=columns[0], y=columns[4], color="Capacity per Plant"),
-                    data, text_audo=True
+                    data
                    )
     fig.update_xaxes(side="top")
 
